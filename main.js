@@ -50,7 +50,6 @@ function coordToSpot(x, y) {
 }
 
 function spotToCoord(spot) {
-    console.log('spotToCoord:', spot);
     switch (spot) {
         case 1:
             return [0, 0]
@@ -180,6 +179,7 @@ $startButton.onclick = async _ => {
     fillSpot(x, h)
 
     if (x == computerMove(p + 4)) {
+
         s = computerMove(p + 2)
         fillSpot(s, c)
 
@@ -187,39 +187,37 @@ $startButton.onclick = async _ => {
         fillSpot(y, h)
 
         if (y == computerMove(s + 4)) {
+
             if (w % 2 != 0) {
+
                 o = computerMove(s + 3)
                 fillSpot(o, c)
 
                 z = await userInput()
                 fillSpot(z, h)
+
                 if (z == computerMove(o + 4)) {
                     n = computerMove(o + 6)
                     fillSpot(n, c)
-
                     await lose(false)
                 } else {
                     n = computerMove(o + 4)
                     fillSpot(n, c)
-
                     await lose()
                 }
             } else {
                 o = computerMove(s + 7)
                 fillSpot(o, c)
-                console.log('lose 3');
                 await lose()
             }
         } else {
             o = computerMove(s + 4)
             fillSpot(o, c)
-            console.log('lose 2');
             await lose()
         }
     } else {
         s = computerMove(p + 4)
         fillSpot(s, c)
-        console.log('lose 1');
         await lose()
     }
 }
