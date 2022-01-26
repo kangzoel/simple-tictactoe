@@ -8,7 +8,7 @@ Permainan Tic Tac Toe dengan algoritme sederhana.
 
 ```
 git clone https://github.com/kangzoel/tictactoe-1.git
-cd tictactoe-1
+cd simple-tictactoe
 yarn
 ```
 
