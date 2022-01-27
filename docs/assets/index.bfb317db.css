@@ -1,0 +1,1 @@
+body{font:16px/1.5 Segoe UI,Arial,sans-serif}.container{margin:0 auto;width:300px;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh}#lose,#tie{padding:10px;width:280px;border-radius:4px;text-align:center;margin:10px 0 16px}#lose{background:#ffc7c7;color:#a13b3b}#tie{background:#ffefca;color:#8b6520}canvas{margin-bottom:8px}
