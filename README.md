@@ -13,3 +13,7 @@ yarn
 ```
 
 Development server: `yarn dev`
+
+## Demo
+
+https://kangzoel.github.io/simple-tictactoe/
